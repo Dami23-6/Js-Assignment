@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biography</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div class="box">
+        <img src="image.jpeg" alt="my picture">
+        <h1>Mariam Damilola Imam</h1>
+        <p>A young promising adult enrolled in TIIDELab Prefellowship Cohort 3.0 and its been nothing short of amazing.</p>
+        <p>i am working towards being a front end web developer and 
+          i believe with the right skill sets and God's grace, the sky is just a starting point for me.</p>
+        <p id="text">I am currently learning HTML and CSS.</p>
+        <button id="btn">Update Me</button>
+    </div>
+      
+      <script>
+        // Get the button and the text element
+        var button = document.querySelector("#btn");
+        var text = document.querySelector("#text");
+        
+        // Add a click event listener to the button
+        button.addEventListener("click",function() {
+          // Change text to "I'm currently learning Javascript"
+          text.textContent = "I am currently learning Javascript.";
+        });
+      </script>
+</body>
+</html>
